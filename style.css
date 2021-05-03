@@ -58,5 +58,5 @@ body {
 }
 
 .game007 {
-  display: none;
+  visibility: hidden;
 }
