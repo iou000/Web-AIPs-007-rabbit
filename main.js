@@ -5,18 +5,18 @@ const tag = document.querySelector('.tag');
 const start = document.querySelector('.startBtn');
 const game007 = document.querySelector('.game007');
 
+
 function mousemove() {
     document.addEventListener('mousemove', (e) => {
     const x = e.clientX
     const y = e.clientY
 
-    vertical.style.left = `${x}px`;
-    horizontal.style.top = `${y}px`;
-    targetImg.style.left = `${x}px`;
-    targetImg.style.top = `${y}px`;
-    tag.style.left = `${x}px`;
-    tag.style.top = `${y}px`;
+    vertical.style.transform = `translateX(${x}px)`;
+    horizontal.style.transform = `translateY(${y}px)`;
+    targetImg.style.transform = `translate(${x-targetImg.clientWidth/2}px, ${y-targetImg.clientHeight/2}px)`;
+    tag.style.transform = `translate(${x+15}px, ${y+15}px)`;
     tag.innerHTML = `${x}px, ${y}px`;
+
 });
 }
 
