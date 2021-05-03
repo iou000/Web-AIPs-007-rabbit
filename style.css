@@ -1,6 +1,7 @@
 body {
   background-color: rgb(25, 25, 25);
   margin: 0;
+  overflow: hidden;
 }
 
 .game {
